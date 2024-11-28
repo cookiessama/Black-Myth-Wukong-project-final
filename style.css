@@ -1,0 +1,307 @@
+/* Existing Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url('https://preview.redd.it/black-myth-wukong-behind-the-lore-the-origin-of-sun-wukong-v0-31n3gc8zjlfd1.jpg?width=3840&format=pjpg&auto=webp&s=de0c5a003cd391c158f08d1a7b71e6faf2a640cc') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+header {
+    background-color: #2a2a2a; /* Dark Grey background */
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+/* end Header Styles */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-img {
+    width: 180px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.header-title {
+    flex: 1;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.rating-bar-container {
+    margin-top: 20px;
+}
+
+.rating-bar {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    background-color: #555;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.rating-bar-fill {
+    height: 100%;
+    background-color: #ff8c00; /* Dark Orange */
+}
+
+.rating-bar-label {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    margin-top: 0;
+}
+
+.card input[type="text"],
+.card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.card input[type="text"]:focus,
+.card textarea:focus {
+    border-color: #ff8c00; /* Dark Orange */
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
+}
+
+.card textarea {
+    height: 100px;
+}
+
+.card button {
+    background-color: #ff8c00; /* Dark Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card button:hover {
+    background-color: #e07b00;
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.stars .star {
+    cursor: pointer;
+    font-size: 24px;
+    color: #777;
+}
+
+.stars .star.selected {
+    color: #FFD700;
+}
+
+.review {
+    background-color: #555;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.review-content p {
+    margin: 5px 0;
+}
+
+.like-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #ff8c00; /* Dark Orange */
+    padding: 0;
+}
+
+.like-btn .like-icon {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.like-btn.liked .like-icon {
+    color: #ff0000;
+}
+
+.comment-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.comment-submit {
+    background-color: #ff8c00; /* Dark Orange */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-submit:hover {
+    background-color: #e07b00;
+}
+
+/* Comment styling */
+.comment {
+    font-size: 0.875em; /* Smaller font size */
+    color: #ccc; /* Grey color */
+    margin-top: 10px;
+}
+.rating-stars {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #FFD700;  /* Color for the stars */
+}
+
+.review-header {
+    position: relative;
+    padding-right: 50px;  /* To avoid overlap with the stars */
+}
+
+.rating {
+    font-size: 14px; /* Adjust the size of the rating container */
+    margin-top: 10px;
+}
+
+.navHeader{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.rating a {
+    display: inline-block;
+    padding: 5px 10px; /* Smaller padding */
+    color: #fff;
+    background-color: #ff8c00; /* Dark Orange */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px; /* Smaller border radius */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 12px; /* Smaller font size */
+}
+
+.rating a:hover {
+    background-color: #e07b00; /* Darker shade of orange */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    color: #bdbdbd;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  footer h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ffc107;
+  }

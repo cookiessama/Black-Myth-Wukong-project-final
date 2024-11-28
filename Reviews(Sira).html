@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1 class="navHeader">Black Myth: Wukong</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Gameplay(Cynthia).html">Gameplay</a></li>
+                    <li><a href="StoryBackground(Beiyu).html">Story Background</a></li>
+                    <li><a href="Reviews(Sira).html">Reviews</a></li>
+                    <li><a href="FAQ(Charlotte).html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-header">
+            <img src="https://assets-prd.ignimgs.com/2024/08/18/blackmyth-1723969364570.jpg" alt="Black Myth" class="header-img">
+            <div class="header-title">
+                <h1>Black Myth: Wukong</h1>
+                <div class="rating">
+                    <a href="https://store.steampowered.com/app/2358720/Black_Myth_Wukong/" target="_blank" id="steam-link">Available on Steam</a>
+                </div>
+            </div>
+            <div class="rating-bar-container">
+                <h2>Ratings Breakdown</h2>
+                <div id="rating-bar-5" class="rating-bar">
+                    <div class="rating-bar-fill" style="width: 0%;"></div>
+                    <span class="rating-bar-label">5 Stars - 0 ratings</span>
+                </div>
+                <div id="rating-bar-4" class="rating-bar">
+                    <div class="rating-bar-fill" style="width: 0%;"></div>
+                    <span class="rating-bar-label">4 Stars - 0 ratings</span>
+                </div>
+                <div id="rating-bar-3" class="rating-bar">
+                    <div class="rating-bar-fill" style="width: 0%;"></div>
+                    <span class="rating-bar-label">3 Stars - 0 ratings</span>
+                </div>
+                <div id="rating-bar-2" class="rating-bar">
+                    <div class="rating-bar-fill" style="width: 0%;"></div>
+                    <span class="rating-bar-label">2 Stars - 0 ratings</span>
+                </div>
+                <div id="rating-bar-1" class="rating-bar">
+                    <div class="rating-bar-fill" style="width: 0%;"></div>
+                    <span class="rating-bar-label">1 Star - 0 ratings</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1>Write a Review</h1>
+            <div class="rating">
+                <span id="rating">0</span>/5
+            </div>
+            <div class="stars" id="stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <div>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div>
+                <input type="text" id="title" placeholder="Enter your review title">  <!-- New title input field -->
+            </div>
+            <p>Share your review:</p>
+            <textarea id="review" placeholder="Write your review here"></textarea>
+            <button id="submit">Submit</button>
+        </div>
+
+        <div id="review-section">
+            <h2>Existing Reviews</h2>
+            <div class="reviews" id="reviews"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer-container">
+           <section id="footer-info">
+             <h3>About the Website</h3>
+             <p>This website is an unofficial page for the game "Black Myth: Wukong," providing basic information about the game for display purposes only.</p>
+           </section>
+           <section id="disclaimer">
+             <h3>Disclaimer</h3>
+             <p>All images and content are owned by the game developers and are used solely for display purposes without any commercial intent. The provider of this website is not liable for any information provided by external platforms.</p>
+           </section>
+           <section id="contact">
+             <h3>Contact Information</h3>
+             <p>If you have any questions, please contact the website administrator at <a href="mailto:example@example.com">example@example.com</a>.</p>
+           </section>
+         </div>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>

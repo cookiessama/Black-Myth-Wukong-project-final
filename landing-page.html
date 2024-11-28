@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page Layout</title>
+    <style>
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: #121212;
+        color: #e0e0e0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .navigation {
+        height: 10%;
+        background-color: #1f1f1f;
+        padding: 20px 0;
+        border-bottom: 2px solid #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .video-section {
+        flex: 1;
+        background-color: #e6e6e6;
+        border-bottom: 2px solid #333;
+        padding: 40px 0;
+      }
+      .button-section {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #1f1f1f;
+        padding: 20px 0;
+      }
+      .button {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #333;
+        /* border-radius: 50%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .button img {
+        width: 100%;
+        height: 100%;
+      }
+      .button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Black Myth: Wukong</h1>
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Gameplay(Cynthia).html">Gameplay</a></li>
+            <li><a href="StoryBackground(Beiyu).html">Story Background</a></li>
+            <li><a href="Reviews(Sira).html">Reviews</a></li>
+            <li><a href="FAQ(Charlotte).html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Navigation Section -->
+      <!-- Video Section -->
+      <div class="video-section">
+        <iframe
+          width="100%"
+          height="535"
+          src="https://www.youtube.com/embed/bzyMLoSwYvk"
+          title="Black Myth: Wukong - Final Trailer | Launching August 20, 2024"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- Button Section -->
+      <div class="button-section">
+        <div class="button">
+          <a href="./about.html">
+            <img src="./img1.png" alt="" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="Gameplay(Cynthia).html">
+            <img src="./img2.png" alt="" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="StoryBackground(Beiyu).html">
+            <img src="./img3.png" alt="" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="Reviews(Sira).html">
+            <img src="./img4.png" alt="" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="FAQ(Charlotte).html">
+            <img src="./img5.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -30,10 +30,68 @@
                  margin-bottom: 10px;
             }
 
+            /* Header Styles */
+            .header-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center; 
+            }
+    
+            header {
+                background-color: #2a2a2a; /* Dark Grey background */
+                padding: 20px;
+                border-bottom: 2px solid #333;
+                width: 100%;
+            }
+    
+            header h1 {
+                font-family: 'Noto Sans SC', sans-serif;
+                font-size: 2.5rem;
+                color: #ff9800;
+                margin-bottom: 10px;
+                text-align: center; 
+            }
+
+            nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            padding: 0;
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: #e0e0e0;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+    
+            nav a:hover {
+                color: #ff9800;
+            }
+            /* end Header Styles */            
+
         </style>
     </head>
     
     <body>
+        <header>
+            <div class="header-container">
+                <h1 class="navHeader">Black Myth: Wukong</h1>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Gameplay(Cynthia).html">Gameplay</a></li>
+                        <li><a href="StoryBackground(Beiyu).html">Story Background</a></li>
+                        <li><a href="Reviews(Sira).html">Reviews</a></li>
+                        <li><a href="FAQ(Charlotte).html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <div class="container">
             <h1 align="center"> Black Myth: Wukong </h1>
             <h1 align="center">The Gamesworld </h1>
